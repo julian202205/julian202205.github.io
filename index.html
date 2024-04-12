@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Moneda</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <h1>Politécnico Change</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section id="converter">
+            <h2><b>Cambio de Moneda<b></h2>
+            <div>
+                <label for="amount">Cantidad:</label>
+                <input type="number" id="amount">
+                <select id="fromCurrency">
+                    <option value="USD">USD - Dólares</option>
+                    <option value="EUR">EU - Euros</option>
+                    <option value="BRL">BR - Reales Brasileños</option>
+                </select>
+                <button onclick="convertCurrency()">Convertir</button>
+            </div>
+            <div id="result"></div>
+        </section>
+    </main>
+
+    <footer class="ct_2">
+        <p><b>© 2024 Politécnico Change. Todos los derechos reservados.<b></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
